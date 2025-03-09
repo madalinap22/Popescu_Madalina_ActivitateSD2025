@@ -1,7 +1,8 @@
-#include <stdio.h>
-
-
-void main()
-{
-	printf("Test");
-}
+//#include <stdio.h>
+//
+//
+//void main()
+//{
+//	printf("Test");
+//
+//}
