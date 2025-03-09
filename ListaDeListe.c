@@ -4,6 +4,8 @@
 #include<string.h>
 #include<malloc.h>
 
+
+//TO DO: modifica nume structuri -  Student
 typedef struct student student;
 typedef struct nodls nodls;
 typedef struct nodlp nodlp;
