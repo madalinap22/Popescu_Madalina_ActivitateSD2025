@@ -21,9 +21,18 @@
     <ClCompile Include="ListaDeListe.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Stiva.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Coada.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fisierListaDeListe.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="fisierStiva.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

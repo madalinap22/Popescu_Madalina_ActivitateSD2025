@@ -127,11 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Coada.c" />
     <ClCompile Include="ListaDeListe.c" />
     <ClCompile Include="Source.c" />
+    <ClCompile Include="Stiva.c" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="fisierListaDeListe.txt" />
+    <Text Include="fisierStiva.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

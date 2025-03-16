@@ -1,0 +1,6 @@
+5
+11 Mara 2 7 8
+22 Andreea 2 10 10
+33 Marius 3 7 8 9
+44 Andrei 2 10 10
+55 Alex 3 9 9 9
