@@ -6,32 +6,32 @@
 
 
 //TO DO: modifica nume structuri -  Student
-typedef struct student student;
-typedef struct nodls nodls;
-typedef struct nodlp nodlp;
+typedef struct Student Student;
+typedef struct Nodls Nodls;
+typedef struct Nodlp Nodlp;
 
-typedef struct student {
+typedef struct Student {
 	unsigned int id;
 	char* nume;
 	unsigned char nrMaterii;//0-255 - > este numeric
 	int* note;
-}student;
+} Student;
 
-typedef struct nodls {
-	student info;
-	nodls* next;
+typedef struct Nodls {
+	Student info;
+	Nodls* next;
 
-}nodls;
+} Nodls;
 
-typedef struct nodlp {
-	nodls* info;
-	nodlp* next;
+typedef struct Nodlp {
+	Nodls* info;
+	Nodlp* next;
 
-}nodlp;
+} Nodlp;
 
 
-student initializareStudent(unsigned int id, const char* nume, unsigned char nrMaterii, int* note) {
-	student s;
+Student initializareStudent(unsigned int id, const char* nume, unsigned char nrMaterii, int* note) {
+	Student s;
 	s.id = id;
 	s.nume = (char*)malloc(sizeof(char) * (strlen(nume) + 1));
 	strcpy_s(s.nume, sizeof(char) * (strlen(nume) + 1), nume);
@@ -42,79 +42,71 @@ student initializareStudent(unsigned int id, const char* nume, unsigned char nrM
 	}
 
 	return s;
-
 }
 
 //ins in lista simpla/secundara
-nodls* inserareLs(nodls* capls, student s) {
+Nodls* inserareLs(Nodls* capls, Student s) {
 	//creare nod
 
-	nodls* nou = (nodls*)malloc(sizeof(nodls));
+	Nodls* nou = (Nodls*)malloc(sizeof(Nodls));
 	nou->info = initializareStudent(s.id, s.nume, s.nrMaterii, s.note);
 	nou->next = NULL;
 
 	//inserare
 	if (capls == NULL) {
 		capls = nou;
-
 	}
 	else {
-		nodls* aux = capls;
+		Nodls* aux = capls;
 		while (aux->next) {
 			aux = aux->next;
 		}
 		aux->next = nou;
 	}
 	return capls;
-
 }
 
 //inserare lista principala
-nodlp* inserareLp(nodlp* caplp, nodls* capls) {//adresa de inceput a listei secundare
-	nodlp* nou = (nodlp*)malloc(sizeof(nodlp));
+Nodlp* inserareLp(Nodlp* caplp, Nodls* capls) {//adresa de inceput a listei secundare
+	Nodlp* nou = (Nodlp*)malloc(sizeof(Nodlp));
 	nou->info = capls; //asteapta o adresa, am o adresa
 	nou->next = NULL;
 	if (caplp == NULL) {
 		caplp = nou;
 	}
 	else {
-		nodlp* aux = caplp;
+		Nodlp* aux = caplp;
 		while (aux->next) { //while(aux) nu insereaza
 			aux = aux->next;
-
 		}
 		aux->next = nou;
-
 	}
 	return caplp;
 }
-//afisare student
-void afisareStudent(student s)
+//afisare Student
+void afisareStudent(Student s)
 {
-	printf("\n%u, %s, %u   ", s.id, s.nume, s.nume, s.nrMaterii);
+	printf("\n%u, %s, %u   ", s.id, s.nume, s.nrMaterii);
 	for (int i = 0; i < s.nrMaterii; i++) {
 		printf("%d ", s.note[i]);
 	}
-
 }
 //afisare ls
-void afisareLs(nodls* capls) {
-	nodls* aux = capls;
+void afisareLs(Nodls* capls) {
+	Nodls* aux = capls;
 	while (aux) {
 		printf("\n%u, %s, %u   ", aux->info.id, aux->info.nume, aux->info.nrMaterii);
 		for (int i = 0; i < aux->info.nrMaterii; i++) {
 			printf("%d ", aux->info.note[i]);
 		}
 		aux = aux->next;
-
-		/*afisareStudent(aux->info);*/
 	}
 	printf("\n");
 }
 
 //afisare lp
-void afisareLp(nodlp* caplp) {
-	nodlp* aux = caplp;
+void afisareLp(Nodlp* caplp) {
+	Nodlp* aux = caplp;
 	int contor = 1;
 	while (aux) {
 		printf("Sublista: %d", contor++);
@@ -123,39 +115,34 @@ void afisareLp(nodlp* caplp) {
 	}
 }
 
-void dezalocareLs(nodls* capls) {
-	nodls* aux = capls;
+void dezalocareLs(Nodls* capls) {
+	Nodls* aux = capls;
 	while (aux) {
 		free(aux->info.nume);
 		free(aux->info.note);
-
-		nodls* temp = aux->next;
+		Nodls* temp = aux->next;
 		free(aux);
 		aux = temp;
 	}
 }
 
-void dezalocareLp(nodlp* caplp) {
-	nodlp* aux = caplp;
+void dezalocareLp(Nodlp* caplp) {
+	Nodlp* aux = caplp;
 	while (aux) {
 		dezalocareLs(aux->info);
-		nodlp* temp = aux->next;
+		Nodlp* temp = aux->next;
 		free(aux);
 		aux = temp;
 	}
 }
-
-
-
 
 void main()
 {
 	int nr;
-	student s;
-	nodls* capls = NULL;
-	nodlp* caplp = NULL;
-
-	nodls* capls1 = NULL;
+	Student s;
+	Nodls* capls = NULL;
+	Nodlp* caplp = NULL;
+	Nodls* capls1 = NULL;
 
 	char buffer[40];
 
@@ -164,11 +151,9 @@ void main()
 
 	for (int i = 0; i < nr; i++) {
 		fscanf(f, "%u", &s.id);
-
 		fscanf(f, "%s", buffer);
 		s.nume = (char*)malloc(sizeof(char) * (strlen(buffer) + 1));
 		strcpy_s(s.nume, sizeof(char) * (strlen(buffer) + 1), buffer);
-
 		fscanf(f, "%u", &s.nrMaterii);
 		s.note = (int*)malloc(sizeof(int) * s.nrMaterii);
 		for (int i = 0; i < s.nrMaterii; i++) {
@@ -185,21 +170,14 @@ void main()
 
 		free(s.nume);
 		free(s.note);
-
 	}
 	fclose(f);
 	afisareLs(capls);
 	afisareLs(capls1);
-
 
 	caplp = inserareLp(caplp, capls);
 	caplp = inserareLp(caplp, capls1);
 
 	printf("\nLista de liste ------------------------------\n");
 	afisareLp(caplp);
-
-
-
-
 }
-
