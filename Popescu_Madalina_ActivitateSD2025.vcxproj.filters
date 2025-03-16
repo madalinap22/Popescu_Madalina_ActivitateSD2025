@@ -35,5 +35,8 @@
     <Text Include="fisierStiva.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="fisierCoada.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

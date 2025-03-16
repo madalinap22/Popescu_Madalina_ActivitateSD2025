@@ -133,6 +133,7 @@
     <ClCompile Include="Stiva.c" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="fisierCoada.txt" />
     <Text Include="fisierListaDeListe.txt" />
     <Text Include="fisierStiva.txt" />
   </ItemGroup>

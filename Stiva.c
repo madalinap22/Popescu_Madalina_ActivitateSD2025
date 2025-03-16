@@ -4,7 +4,7 @@
 //#include<string.h>
 //#include<malloc.h>
 //
-////to do conversie si salvare in vector
+////to do conversie si salvare in vector, dezalocare - cu pop pana la ultimul nod
 //
 ////typedef struct Student Student;
 //
@@ -72,6 +72,7 @@
 //		free(*varf);
 //
 //		*varf = temp;
+// return 0;
 //	}
 //
 //}
