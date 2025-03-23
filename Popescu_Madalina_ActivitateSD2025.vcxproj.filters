@@ -27,6 +27,9 @@
     <ClCompile Include="Coada.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HashTableChaining.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fisierListaDeListe.txt">
@@ -36,6 +39,9 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="fisierCoada.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="fisierHash.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

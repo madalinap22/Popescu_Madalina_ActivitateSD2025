@@ -128,12 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Coada.c" />
+    <ClCompile Include="HashTableChaining.c" />
     <ClCompile Include="ListaDeListe.c" />
     <ClCompile Include="Source.c" />
     <ClCompile Include="Stiva.c" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="fisierCoada.txt" />
+    <Text Include="fisierHash.txt" />
     <Text Include="fisierListaDeListe.txt" />
     <Text Include="fisierStiva.txt" />
   </ItemGroup>

@@ -48,7 +48,7 @@
 //	nou->info = initializareStudent(s.id, s.nume, s.nrMaterii, s.note);
 //	nou->next = NULL;
 //
-//	if (varf == NULL){ ///////////////////////////////
+//	if (*varf == NULL){ //varf == NULL
 //		*varf = nou;
 //	}
 //	else {
