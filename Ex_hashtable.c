@@ -3,6 +3,7 @@
 #include<stdlib.h>
 #include<string.h>
 #include<malloc.h>
+//To do: //nr elemente dupa un parametru char*, suma, medie, praguri, etc
 
 typedef struct Pachet {
 	unsigned int id;
@@ -100,6 +101,8 @@ void dezalocare(hashTable tabela) {
 		free(tabela.vector);
 	}
 }
+
+
 
 void main(){
 
