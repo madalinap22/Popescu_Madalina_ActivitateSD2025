@@ -33,6 +33,9 @@
     <ClCompile Include="Ex_hashtable.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="1.Recapitulare.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fisierListaDeListe.txt">

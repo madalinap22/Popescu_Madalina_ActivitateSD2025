@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1.Recapitulare.c" />
     <ClCompile Include="Coada.c" />
     <ClCompile Include="Ex_hashtable.c" />
     <ClCompile Include="HashTableChaining.c" />
