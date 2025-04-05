@@ -19,7 +19,7 @@
 //
 //typedef struct Nodls {
 //	Student info;
-//	Nodls* next;
+//	struct Nodls* next;
 //
 //} Nodls;
 //

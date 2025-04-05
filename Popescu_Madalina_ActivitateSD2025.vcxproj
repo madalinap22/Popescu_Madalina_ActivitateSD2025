@@ -132,6 +132,7 @@
     <ClCompile Include="Ex_hashtable.c" />
     <ClCompile Include="HashTableChaining.c" />
     <ClCompile Include="ListaDeListe.c" />
+    <ClCompile Include="ListaSimpla.c" />
     <ClCompile Include="Source.c" />
     <ClCompile Include="Stiva.c" />
   </ItemGroup>

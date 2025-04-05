@@ -36,6 +36,9 @@
     <ClCompile Include="1.Recapitulare.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ListaSimpla.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fisierListaDeListe.txt">
