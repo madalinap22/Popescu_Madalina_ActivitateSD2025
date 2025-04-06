@@ -131,8 +131,10 @@
     <ClCompile Include="Coada.c" />
     <ClCompile Include="Ex_hashtable.c" />
     <ClCompile Include="HashTableChaining.c" />
+    <ClCompile Include="ListaCirculara.c" />
     <ClCompile Include="ListaDeListe.c" />
     <ClCompile Include="ListaDubla.c" />
+    <ClCompile Include="ListaDublaCirculara.c" />
     <ClCompile Include="ListaSimpla.c" />
     <ClCompile Include="Source.c" />
     <ClCompile Include="Stiva.c" />
@@ -141,8 +143,10 @@
     <Text Include="fisierCoada.txt" />
     <Text Include="fisierEx_hashtable.txt" />
     <Text Include="fisierHash.txt" />
+    <Text Include="fisierListaCirculara.txt" />
     <Text Include="fisierListaDeListe.txt" />
     <Text Include="fisierListaDubla.txt" />
+    <Text Include="fisierListaDublaCirculara.txt" />
     <Text Include="fisierStiva.txt" />
     <Text Include="ListaSimplaStudenti.txt" />
   </ItemGroup>

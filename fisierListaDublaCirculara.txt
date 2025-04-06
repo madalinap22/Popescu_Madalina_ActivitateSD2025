@@ -1,0 +1,4 @@
+8,Mara Popa,2,7,8
+9,Andreea Popescu,2,10,10
+10,Marius Coman,3,7,8,9
+11,Mariana Coman,3,7,8,9

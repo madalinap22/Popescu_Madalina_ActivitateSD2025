@@ -42,6 +42,12 @@
     <ClCompile Include="ListaDubla.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ListaCirculara.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ListaDublaCirculara.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fisierListaDeListe.txt">
@@ -63,6 +69,12 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="fisierListaDubla.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="fisierListaCirculara.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="fisierListaDublaCirculara.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
