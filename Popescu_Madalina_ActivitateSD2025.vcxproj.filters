@@ -39,6 +39,9 @@
     <ClCompile Include="ListaSimpla.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ListaDubla.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fisierListaDeListe.txt">
@@ -57,6 +60,9 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="ListaSimplaStudenti.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="fisierListaDubla.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
