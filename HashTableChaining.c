@@ -116,6 +116,9 @@
 //	}
 //}
 //
+////count dupa parametru
+//
+//
 //void main() {
 //	Student s;
 //	hashTable tabela;//neinitializata; ii dau dimensiune, aloc memorie + for

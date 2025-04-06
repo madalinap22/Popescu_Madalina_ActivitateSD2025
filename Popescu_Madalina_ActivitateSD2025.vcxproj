@@ -142,6 +142,7 @@
     <Text Include="fisierHash.txt" />
     <Text Include="fisierListaDeListe.txt" />
     <Text Include="fisierStiva.txt" />
+    <Text Include="ListaSimplaStudenti.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
