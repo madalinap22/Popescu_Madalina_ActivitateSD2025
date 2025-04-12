@@ -277,7 +277,7 @@
 //	printf("\nMedia suprafetei pentru Flanco: %.2f", medieSuprafete(lista, "Flanco"));
 //	
 //	modificaSuprafata(lista, "Samsung", 100.5);
-//	printf("\n\nNr angajati modificat pentru Samsung: ");
+//	printf("\n\nSuprafata modificata pentru Samsung: ");
 //	afisareLista(lista);
 //	
 //	modificaProgram(lista, 10, "12:00-13:00");

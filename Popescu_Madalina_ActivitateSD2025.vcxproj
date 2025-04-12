@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="1.Recapitulare.c" />
     <ClCompile Include="Coada.c" />
+    <ClCompile Include="extra1_ListaCirculara.c" />
     <ClCompile Include="extra1_ListaDubla.c" />
     <ClCompile Include="extra1_ListaDublaCirculara.c" />
     <ClCompile Include="Ex_hashtable.c" />
@@ -142,6 +143,7 @@
     <ClCompile Include="Stiva.c" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="extra1_ListaCirculara_fisier.txt" />
     <Text Include="extra1_ListaDublaCirculara_fisier.txt" />
     <Text Include="extra1_ListaDubla_fisier.txt" />
     <Text Include="fisierCoada.txt" />

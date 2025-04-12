@@ -54,6 +54,9 @@
     <ClCompile Include="extra1_ListaDublaCirculara.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="extra1_ListaCirculara.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fisierListaDeListe.txt">
@@ -87,6 +90,9 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="extra1_ListaDublaCirculara_fisier.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="extra1_ListaCirculara_fisier.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
