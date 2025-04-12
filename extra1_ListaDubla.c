@@ -197,6 +197,17 @@
 //		aux = aux->next;
 //	}
 //}
+////nr elemente
+//int  nrElemente(LD lista) {
+//	int contor = 0;
+//
+//	Nod* aux = lista.prim;
+//	while (aux) {
+//		contor++;
+//		aux = aux->next;
+//	}
+//	return contor;
+//}
 ////maxim = suprafata maxima
 //void afiseazaMaxim(LD lista) {
 //	Nod* aux = lista.prim;
@@ -280,6 +291,8 @@
 //	modificaProgram(lista, 1, "12:00-13:00");
 //	printf("\n\nProgram modificat pt magazinul cu id 1: ");
 //	afisareSfarsit(lista);
+//
+//	printf("\n\nNr elemente in lista: %d", nrElemente(lista));
 //
 //	printf("\n\nMagazinul cu suprafata maxima: ");
 //	afiseazaMaxim(lista);
