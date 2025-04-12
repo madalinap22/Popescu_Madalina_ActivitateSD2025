@@ -24,7 +24,7 @@
 //} Nodls;
 //
 //typedef struct Nodlp {
-//	Nodls* info;
+//	Nodls* info; //cap de lista secundara
 //	Nodlp* next;
 //
 //} Nodlp;
@@ -47,7 +47,6 @@
 ////ins in lista simpla/secundara
 //Nodls* inserareLs(Nodls* capls, Student s) {
 //	//creare nod
-//
 //	Nodls* nou = (Nodls*)malloc(sizeof(Nodls));
 //	nou->info = initializareStudent(s.id, s.nume, s.nrMaterii, s.note);
 //	nou->next = NULL;
