@@ -1,0 +1,5 @@
+111,Flanco,Electronic,450.5,2,19,20
+222,Mega,Alimentar,1050.5,3,25,45,50
+333,Lidl,Alimentar,350.5,2,18,25
+444,Carrefour,Alimentar,2250.5,3,45,30,36
+555,Flanco,Electronic,150.5,2,31,32

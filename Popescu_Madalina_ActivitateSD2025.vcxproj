@@ -146,6 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="extra1_ListaCirculara_fisier.txt" />
+    <Text Include="extra1_ListaDeListe_fisier.txt" />
     <Text Include="extra1_ListaDublaCirculara_fisier.txt" />
     <Text Include="extra1_ListaDubla_fisier.txt" />
     <Text Include="fisierABC.txt" />
