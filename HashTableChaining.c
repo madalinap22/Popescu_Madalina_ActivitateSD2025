@@ -151,12 +151,16 @@
 //			token = strtok(NULL, separator);
 //			s.note[i] = atoi(token);
 //		}
+//
 //		inserare(tabela, s);
 //		free(s.nume);
 //		free(s.note);
-//
 //	}
+//	fclose(f);
 //
 //	afisare(tabela);
+//
+//
+//	dezalocare(tabela);
 //
 //}
