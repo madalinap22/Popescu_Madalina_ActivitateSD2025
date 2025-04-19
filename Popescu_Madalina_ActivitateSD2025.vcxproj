@@ -129,7 +129,6 @@
   <ItemGroup>
     <ClCompile Include="1.Recapitulare.c" />
     <ClCompile Include="ABC.c" />
-    <ClCompile Include="ABC_Rezervare.c" />
     <ClCompile Include="AVL.c" />
     <ClCompile Include="Coada.c" />
     <ClCompile Include="extra1_ListaCirculara.c" />
