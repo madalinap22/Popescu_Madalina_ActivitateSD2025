@@ -9,6 +9,7 @@
 //	char* hotel;
 //	char* client;
 //	float suma;
+//	int nrCamere; //unsigned char
 //}Cazare;
 //
 //typedef struct Nod {
@@ -17,7 +18,7 @@
 //	struct Nod* dreapta;
 //}Nod;
 //
-//Cazare initializareCazare(unsigned int id, const char* hotel, const char* client, float suma) {
+//Cazare initializareCazare(unsigned int id, const char* hotel, const char* client, float suma, int nrCamere) {
 //	Cazare c;
 //	c.id = id;
 //	c.hotel = (char*)malloc(sizeof(char) * (strlen(hotel) + 1));
@@ -25,6 +26,7 @@
 //	c.client = (char*)malloc(sizeof(char) * (strlen(client) + 1));
 //	strcpy_s(c.client, sizeof(char) * (strlen(client) + 1), client);
 //	c.suma = suma;
+//	c.nrCamere = nrCamere;
 //	return c;
 //}
 //
@@ -32,7 +34,7 @@
 //	Nod* nou = (Nod*)malloc(sizeof(Nod));
 //	nou->stanga = stanga;
 //	nou->dreapta = dreapta;
-//	nou->info = initializareCazare(c.id, c.hotel, c.client, c.suma);
+//	nou->info = initializareCazare(c.id, c.hotel, c.client, c.suma, c.nrCamere);
 //	return nou;
 //}
 //
@@ -59,7 +61,7 @@
 ////RSD
 //void afisarePreordine(Nod* radacina) {
 //	if (radacina) {
-//		printf("%u, %s, %s, %.2f \n", radacina->info.id, radacina->info.hotel, radacina->info.client, radacina->info.suma);
+//		printf("%u, %s, %s, %.2f, %d \n", radacina->info.id, radacina->info.hotel, radacina->info.client, radacina->info.suma, radacina->info.nrCamere);
 //		afisarePreordine(radacina->stanga);
 //		afisarePreordine(radacina->dreapta);
 //	}
@@ -83,7 +85,7 @@
 //	if (radacina) {
 //		afisarePostordine(radacina->stanga);
 //		afisarePostordine(radacina->dreapta);
-//		printf("%u, %s, %s, %.2f \n", radacina->info.id, radacina->info.hotel, radacina->info.client, radacina->info.suma);
+//		printf("%u, %s, %s, %.2f, %d \n", radacina->info.id, radacina->info.hotel, radacina->info.client, radacina->info.suma, radacina->info.nrCamere);
 //	}
 //}
 //
@@ -91,7 +93,7 @@
 //void afisareInordine(Nod* radacina) {
 //	if (radacina) {
 //		afisareInordine(radacina->stanga);
-//		printf("%u, %s, %s, %.2f \n", radacina->info.id, radacina->info.hotel, radacina->info.client, radacina->info.suma);
+//		printf("%u, %s, %s, %.2f, %d \n", radacina->info.id, radacina->info.hotel, radacina->info.client, radacina->info.suma, radacina->info.nrCamere);
 //		afisareInordine(radacina->dreapta);
 //	}
 //}
@@ -128,6 +130,24 @@
 //		return 0;
 //	}
 //}
+////numarare cazari din arbore
+//void contorizareCazari(Nod* rad, int* contor) { //int* pt ca il schimb; nu il iau ca int contro =0 in functie pt ca ar fi tot timpul maxim 1
+//	if (rad) {
+//		(*contor)++;
+//		contorizareCazari(rad->stanga, contor);
+//		contorizareCazari(rad->dreapta, contor);
+//	}
+//}
+////nodurile frunza - nr cazari din frunze (rad->stanga si rad-.dreapta == null)
+//void nrCamFrunze(Nod* rad, int* suma) {
+//	if (rad) {
+//		if (rad->stanga == NULL && rad->dreapta == NULL) {
+//			(*suma) += rad->info.nrCamere;
+//		}
+//		nrCamFrunze(rad->stanga, suma);
+//		nrCamFrunze(rad->dreapta, suma);
+//	}
+//}
 //
 //
 //void main(){
@@ -154,6 +174,9 @@
 //		token = strtok(NULL, separator);
 //		c.suma = atof(token);
 //
+//		token = strtok(NULL, separator);
+//		c.nrCamere = atoi(token);
+//
 //		radacina = inserareArbore(radacina, c);
 //
 //		free(c.hotel);
@@ -166,5 +189,15 @@
 //
 //	int nr = niveluri(radacina);
 //	printf("\nNr niveluri: %d ", nr);
+//
+//	int contor = 0;
+//	contorizareCazari(radacina, &contor);
+//	printf("\nNr cazari: %d ", contor);
+//
+//	int suma = 0;
+//	nrCamFrunze(radacina, &suma);
+//	printf("\nNr camere noduri frunze: %d ", suma);
+//
+//
 //
 //}

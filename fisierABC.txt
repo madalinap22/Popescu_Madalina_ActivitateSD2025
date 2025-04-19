@@ -1,5 +1,3 @@
-7,Hotel Ana,Ana,299.99
-4,Caraiman,Andrei,350.5
-10,Hotel Maria,Andreea,275.6
-1,Dunarea,Alexandra,455.5
-5,Rin,Patricia,555.5
+7,Hotel Ana,Ana,299.99,3
+8,Caraiman,Andrei,350.5,2
+10,Hotel Maria,Andreea,275.6,5

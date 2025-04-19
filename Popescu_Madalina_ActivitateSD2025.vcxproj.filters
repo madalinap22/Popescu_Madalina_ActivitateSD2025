@@ -63,6 +63,12 @@
     <ClCompile Include="ABC.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ABC_Rezervare.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AVL.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fisierListaDeListe.txt">
