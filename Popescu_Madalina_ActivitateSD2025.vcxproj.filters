@@ -66,6 +66,9 @@
     <ClCompile Include="AVL.c">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="extra1_ListaSimpla.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fisierListaDeListe.txt">

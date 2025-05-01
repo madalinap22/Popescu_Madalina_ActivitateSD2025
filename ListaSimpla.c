@@ -112,6 +112,7 @@
 //		printf("Fisierul nu a fost gasit!\n");
 //	}
 //
+//	
 //	while (fgets(linieBuffer, 100, f)) {
 //		token = strtok(linieBuffer, separator);
 //		s.id = atoi(token);
@@ -136,6 +137,7 @@
 //	}
 //	fclose(f);
 //
+//	printf("Lista simpla---------------------------\n\n");
 //	afisare(cap);
 //
 //

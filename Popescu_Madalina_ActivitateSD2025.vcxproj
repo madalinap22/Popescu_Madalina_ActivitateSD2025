@@ -135,6 +135,7 @@
     <ClCompile Include="extra1_ListaDeListe.c" />
     <ClCompile Include="extra1_ListaDubla.c" />
     <ClCompile Include="extra1_ListaDublaCirculara.c" />
+    <ClCompile Include="extra1_ListaSimpla.c" />
     <ClCompile Include="Ex_hashtable.c" />
     <ClCompile Include="HashTableChaining.c" />
     <ClCompile Include="ListaCirculara.c" />
