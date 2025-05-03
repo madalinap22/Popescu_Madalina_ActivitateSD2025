@@ -62,9 +62,9 @@
 //
 ////la inserare stiu unde inserez (vector); int in caz ca trebuie sa vad pozitia la care am inserat
 //int inserare(hashTable tabela, Student s) {
-//	int poz = 0;
+//	int poz = 0; //ma intereseaza pozitia la care inserez
 //	if (tabela.vector) {
-//		poz = functieHash(tabela, s.id);
+//		poz = functieHash(tabela, s.id); //caut pozitia unde pot sa inserez
 //		Nod* nou = (Nod*)malloc(sizeof(Nod)); //////////////////////////////////////////////////////
 //		nou->info = initializareStudent(s.id, s.nume, s.nrMaterii, s.note);
 //		nou->next = NULL;

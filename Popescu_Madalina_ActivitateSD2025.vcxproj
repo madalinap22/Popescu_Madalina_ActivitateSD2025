@@ -131,6 +131,7 @@
     <ClCompile Include="ABC.c" />
     <ClCompile Include="AVL.c" />
     <ClCompile Include="Coada.c" />
+    <ClCompile Include="extra1_HashTable.c" />
     <ClCompile Include="extra1_ListaCirculara.c" />
     <ClCompile Include="extra1_ListaDeListe.c" />
     <ClCompile Include="extra1_ListaDubla.c" />
@@ -147,10 +148,12 @@
     <ClCompile Include="Stiva.c" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="extra1_HashTable.txt" />
     <Text Include="extra1_ListaCirculara_fisier.txt" />
     <Text Include="extra1_ListaDeListe_fisier.txt" />
     <Text Include="extra1_ListaDublaCirculara_fisier.txt" />
     <Text Include="extra1_ListaDubla_fisier.txt" />
+    <Text Include="extra1_ListaSimpla.txt" />
     <Text Include="fisierABC.txt" />
     <Text Include="fisierCoada.txt" />
     <Text Include="fisierEx_hashtable.txt" />

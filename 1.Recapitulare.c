@@ -59,7 +59,7 @@
 //	vectorDinamic[4] = 26;
 //	vectorDinamic[5] = 27;
 //	for (int i = 0; i < dim; i++) {
-//		printf("%d\n", vectorDinamic[i]);
+//		printf(" %d\n", vectorDinamic[i]);
 //	}
 //
 //	//referinta-dereferentiere
