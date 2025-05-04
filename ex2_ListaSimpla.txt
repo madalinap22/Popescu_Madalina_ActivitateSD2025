@@ -1,0 +1,5 @@
+1,1984,George Orwell,55.5,3,5,4,5
+2,Mandrie si prejudeacata,Jane Austen,35.6,2,5,4
+3,Morometii,Marin Preda,31.5,3,3,4,3
+4,Crima si pedeapsa,Dostoievski,60.5,2,4,4
+5,Enigma Otiliei,George Calinescu,30.5,2,5,4
