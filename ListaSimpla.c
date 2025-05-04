@@ -96,6 +96,39 @@
 //
 //
 // }
+////stergere dupa char* (nume)
+//void stergereNod(Nod** cap, const char* denCautata) {
+//	Nod* prev = NULL;
+//	Nod* aux = *cap;
+//
+//	while (aux) {
+//		if (strcmp(aux->info.nume, denCautata) == 0) {
+//		
+//			Nod* nodDeSters = aux; //memorare aux
+//
+//			if (prev == NULL) {
+//				*cap = aux->next; //***************************
+//				aux = aux->next;
+//			}
+//			else { //interiorul listei
+//				prev->next = aux->next;
+//				aux = aux->next; //parcurgere
+//			}
+//			free(nodDeSters->info.nume);
+//			free(nodDeSters->info.note);
+//			free(nodDeSters);
+//
+//		}
+//		else { //nu gasim denCautata
+//			prev = aux;
+//			aux = aux->next;
+//		}
+//	}
+//
+//
+//}
+//
+//
 //
 //
 //
@@ -139,6 +172,15 @@
 //
 //	printf("Lista simpla---------------------------\n\n");
 //	afisare(cap);
+//
+//	printf("\nStergere---------------------------\n\n");
+//	stergereNod(&cap, "Alex");
+//	afisare(cap);
+//
+//
+//
+//
+//
 //
 //
 //

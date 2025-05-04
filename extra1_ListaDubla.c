@@ -4,7 +4,7 @@
 //#include<string.h>
 //#include<malloc.h>
 //
-////To do: stergere, interschimb?, conversie in alta lista simpla, dubla?
+////To do: stergere, conversie in alta lista simpla, dubla?
 //
 //typedef struct Magazin {
 //	int id;
