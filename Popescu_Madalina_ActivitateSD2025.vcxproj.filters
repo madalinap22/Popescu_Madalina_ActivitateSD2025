@@ -75,6 +75,9 @@
     <ClCompile Include="ex2_ListaSimpla.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ex2_ListaDubla.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fisierListaDeListe.txt">
@@ -126,6 +129,9 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="ex2_ListaSimpla.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="ex2_ListaDubla.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
