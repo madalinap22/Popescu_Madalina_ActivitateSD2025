@@ -116,6 +116,174 @@ void dezalocare(LD lista) {
 		}
 }
 
+//stergeri
+//stergere nod maxim
+Nod* maxim(LD lista) {
+	Nod* aux = lista.prim;
+	Nod* max = lista.prim;
+	while (aux) {
+		if (aux->info.anConstructie > max->info.anConstructie) {
+			max = aux;
+		}
+		aux = aux->next;
+	}
+	return max;
+}
+
+LD stergeNod(LD* lista) {
+	Nod* aux = lista->prim;
+	Nod* max = maxim(*lista);
+
+	while (aux) {
+		if (aux->info.anConstructie == max->info.anConstructie) {
+			Nod* nodDeSters = aux;
+
+			if (aux == lista->prim) {
+				lista->prim = aux->next;
+				lista->prim->prev = NULL;
+				aux = aux->next;
+			}
+			else if (aux->next == NULL) {
+				aux->prev->next = NULL;
+				aux = aux->next;
+			}
+			else {
+				aux->prev->next = aux->next;
+				aux->next->prev = aux->prev;
+				aux = aux->next;
+			}
+
+			free(nodDeSters->info.adresa);
+			free(nodDeSters->info.status);
+			free(nodDeSters->info.cheltuieliLunare);
+
+		}
+		else {
+			aux = aux->next;
+		}
+		
+	}
+	return *lista;
+}
+
+
+//conversie vector conditie
+// //sa se salveze in vector cladirile expertizate
+int nrElemente(LD lista, const char* denCautata) {
+	Nod* aux = lista.prim;
+	int contor = 0;
+
+	while (aux) {
+		if (strcmp(aux->info.status, denCautata) == 0) {
+			contor++;
+		}
+		aux = aux->next;
+	}
+	return contor;
+}
+
+Cladire* vectorFiltrat(LD lista, const char* denCautata) {
+	int dim = nrElemente(lista, denCautata);
+	Cladire* vector = (Cladire*)malloc(sizeof(Cladire) * dim);
+
+	int index = 0;
+
+	Nod* aux = lista.prim;
+	while (aux) {
+		if (strcmp(aux->info.status, denCautata) == 0) {
+			vector[index] = initializareCladire(aux->info.id, aux->info.anConstructie, aux->info.adresa,
+				aux->info.status, aux->info.nrLuni, aux->info.cheltuieliLunare);
+			index++;
+		}
+		aux = aux->next;
+	}
+	return vector;
+}
+//conversie in lista simpla
+//sa se adauge in lista simpla cladirile expertizate
+typedef struct NodLS {
+	Cladire info;
+	struct NodLS* next;
+}NodLS;
+
+NodLS* adaugareLS(NodLS* cap, Cladire c) {
+	NodLS* nou = (NodLS*)malloc(sizeof(NodLS));
+	nou->info = initializareCladire(c.id, c.anConstructie, c.adresa, c.status, c.nrLuni, c.cheltuieliLunare);
+	nou->next = NULL;
+
+	if (cap == NULL) {
+		cap = nou;
+	}
+	else {
+		NodLS* aux = cap;
+		while (aux->next) {
+			aux=aux->next;
+		}
+		aux->next = nou;
+	}
+	return cap;
+}
+
+void dezalocareLS(NodLS* cap) {
+	NodLS* aux = cap;
+	while (aux) {
+		free(aux->info.adresa);
+		free(aux->info.status);
+		free(aux->info.cheltuieliLunare);
+
+		Nod* temp = aux->next;
+		free(aux);
+		aux = temp;
+	}
+}
+void afisareLS(NodLS* cap) {
+	NodLS* aux = cap;
+	while (aux) {
+		afisareCladire(aux->info);
+		aux = aux->next;
+	}
+	
+}
+
+NodLS* conversieLS(LD lista, const char* denCautata) {
+	Nod* aux = lista.prim;
+	NodLS* cap = NULL;
+
+	while (aux) {
+		if (strcmp(aux->info.status, denCautata) == 0) {
+			cap = adaugareLS(cap, aux->info);
+		}
+		aux = aux->next;
+	}
+	return cap;
+}
+
+//medie nr luni
+int medie(LD lista) {
+	Nod* aux = lista.prim;
+	int contor = 0;
+	int suma = 0;
+
+	while (aux) {
+		suma += aux->info.nrLuni;
+		contor++;
+
+		aux = aux->next;
+	}
+	return suma / contor;
+}
+//modificare status
+void modificaStatus(LD lista, int idCautat, const char* denNoua) {
+	Nod* aux = lista.prim;
+	while (aux) {
+		if (aux->info.id == idCautat) {
+			aux->info.status = (char*)malloc(sizeof(char) * strlen(denNoua)+1);
+			strcpy_s(aux->info.status, (sizeof(char) * strlen(denNoua) + 1), denNoua);
+		}
+		aux = aux->next;
+	}
+}
+
 void main() {
 	Cladire c;
 	LD lista;
@@ -163,12 +331,37 @@ void main() {
 	//afisareFinal(lista);
 	afisareInceput(lista);
 
-	//int id;
-	//int anConstructie;
-	//char* adresa;
-	//char* status; //expertizata/neexpertizata
-	//int nrLuni;
-	//float* cheltuieliLunare;
+
+
+	printf("\nAfisare nod cu anul cel mai mare: ");
+	Nod* max = maxim(lista);
+	afisareCladire(max->info);
+
+	printf("\n Stergere nod maxim: ");
+	//stergeNod(&lista);
+	//afisareInceput(lista);
+
+	printf("\n Nr cladiri expertizate: %d", nrElemente(lista, "Expertizata"));
+
+	printf("\nConversie in vector: ");
+	int dim = nrElemente(lista, "Expertizata");
+	Cladire* vectorCladiri = vectorFiltrat(lista, "Expertizata");
+	for (int i = 0; i < dim; i++)
+	{
+		afisareCladire(vectorCladiri[i]);
+	}
+
+	printf("\nConversie in lista simpla: ");
+	NodLS* cap = NULL;
+	cap = conversieLS(lista, "Expertizata");
+	afisareLS(cap);
+
+	printf("\nMedie: %d", medie(lista));
+
+	printf("\nStatus modificat: ");
+	modificaStatus(lista, 1, "NA");
+	afisareInceput(lista);
+	
 
 
 	dezalocare(lista);
