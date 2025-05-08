@@ -199,6 +199,16 @@
 //	}
 //	return vector;
 //}
+//void dezalocareVectorCladiri(Cladire* vector, int dim) {
+//	if (vector) {
+//		for (int i = 0; i < dim; i++) {
+//			free(vector[i].adresa);
+//			free(vector[i].status);
+//			free(vector[i].cheltuieliLunare);
+//		}
+//		free(vector);
+//	}
+//}
 ////conversie in lista simpla
 ////sa se adauge in lista simpla cladirile expertizate
 //typedef struct NodLS {
@@ -364,5 +374,6 @@
 //
 //
 //	dezalocare(lista);
+//	dezalocareVectorCladiri(vectorCladiri, dim);
 //	dezalocareLS(cap);
 //}

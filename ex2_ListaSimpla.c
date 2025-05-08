@@ -206,6 +206,18 @@
 //
 //}
 //
+//void dezalocareVectorCarti(Carte* vector, int dim) {
+//	if (vector) {
+//		for (int i = 0; i < dim; i++) {
+//			free(vector[i].titlu);
+//			free(vector[i].autor);
+//			free(vector[i].ratinguri);
+//		}
+//		free(vector);
+//
+//	}
+//}
+//
 ////conversie lista dubla
 //typedef struct NodLD {
 //	Carte info;
@@ -353,6 +365,7 @@
 //
 //
 //	dezalocare(cap);
+//	dezalocareVectorCarti(vectorCarti, dim);
 //	dezalocareLD(lista);
 //
 //}
