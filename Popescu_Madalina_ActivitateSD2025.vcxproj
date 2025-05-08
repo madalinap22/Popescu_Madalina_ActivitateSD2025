@@ -131,6 +131,7 @@
     <ClCompile Include="ABC.c" />
     <ClCompile Include="AVL.c" />
     <ClCompile Include="Coada.c" />
+    <ClCompile Include="ex2_hashTable.c" />
     <ClCompile Include="ex2_ListaDubla.c" />
     <ClCompile Include="ex2_ListaSimpla.c" />
     <ClCompile Include="extra1_HashTable.c" />
@@ -150,6 +151,7 @@
     <ClCompile Include="Stiva.c" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="ex2_hashTable.txt" />
     <Text Include="ex2_ListaDubla.txt" />
     <Text Include="ex2_ListaSimpla.txt" />
     <Text Include="extra1_HashTable.txt" />
