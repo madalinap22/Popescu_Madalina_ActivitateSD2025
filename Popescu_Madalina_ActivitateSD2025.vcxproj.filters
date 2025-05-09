@@ -84,6 +84,9 @@
     <ClCompile Include="ex3_hashTable.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ex3_ListaSimpla.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fisierListaDeListe.txt">
@@ -144,6 +147,9 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="ex3_hashTable.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="ex3_ListaSimpla.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

@@ -1,0 +1,6 @@
+1,Iasi,Alexandru Popescu,450.5,2,23.3,21.4
+2,Bucuresti,Ana Maria Miron,250.5,1,23.3
+3,Brasov,Cristian Victor,350.5,2,21.5,22.2
+4,Iasi,Andreea Ionescu,150.5,2,21.3,24.4
+5,Brasov,Anca Fritz,50.5,2,18.3,19.4
+6,Iasi,Andreea Ionescu,250.5,2,21.3,24.4
