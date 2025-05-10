@@ -1,0 +1,5 @@
+1,Andreea,Info,20,2,9.5,8.5
+2,Madalina,Info,21,2,9.5,10.0
+3,Andrei,Cibernetica,19,3,9.5,8.5,9.0
+4,Maria,Statistica,25,2,9.5,8.5
+5,Ionut,Cibernetica,22,2,9.5,8.5

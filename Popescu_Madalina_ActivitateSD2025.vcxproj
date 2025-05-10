@@ -137,6 +137,10 @@
     <ClCompile Include="ex3_hashTable.c" />
     <ClCompile Include="ex3_ListaDubla.c" />
     <ClCompile Include="ex3_ListaSimpla.c" />
+    <ClCompile Include="ex4_ListaSimpla.c" />
+    <ClCompile Include="ex5_hashTable.c" />
+    <ClCompile Include="ex5_ListaDubla.c" />
+    <ClCompile Include="ex5_ListaSimpla.c" />
     <ClCompile Include="extra1_HashTable.c" />
     <ClCompile Include="extra1_ListaCirculara.c" />
     <ClCompile Include="extra1_ListaDeListe.c" />
@@ -160,6 +164,7 @@
     <Text Include="ex3_hashTable.txt" />
     <Text Include="ex3_ListaDubla.txt" />
     <Text Include="ex3_ListaSimpla.txt" />
+    <Text Include="ex5_ListaSimpla.txt" />
     <Text Include="extra1_HashTable.txt" />
     <Text Include="extra1_ListaCirculara_fisier.txt" />
     <Text Include="extra1_ListaDeListe_fisier.txt" />

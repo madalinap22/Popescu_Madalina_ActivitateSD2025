@@ -90,6 +90,18 @@
     <ClCompile Include="ex3_ListaDubla.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ex4_ListaSimpla.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ex5_ListaSimpla.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ex5_ListaDubla.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ex5_hashTable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fisierListaDeListe.txt">
@@ -156,6 +168,9 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="ex3_ListaDubla.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="ex5_ListaSimpla.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
