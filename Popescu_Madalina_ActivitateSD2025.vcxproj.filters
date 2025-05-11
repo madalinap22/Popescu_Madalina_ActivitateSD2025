@@ -102,6 +102,12 @@
     <ClCompile Include="ex5_hashTable.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AVL2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ex1_ABC.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fisierListaDeListe.txt">
@@ -171,6 +177,12 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="ex5_ListaSimpla.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="avl_rezervari.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="ex1_ABC.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

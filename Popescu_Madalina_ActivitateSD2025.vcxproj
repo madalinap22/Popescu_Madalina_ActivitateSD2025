@@ -130,7 +130,9 @@
     <ClCompile Include="1.Recapitulare.c" />
     <ClCompile Include="ABC.c" />
     <ClCompile Include="AVL.c" />
+    <ClCompile Include="AVL2.c" />
     <ClCompile Include="Coada.c" />
+    <ClCompile Include="ex1_ABC.c" />
     <ClCompile Include="ex2_hashTable.c" />
     <ClCompile Include="ex2_ListaDubla.c" />
     <ClCompile Include="ex2_ListaSimpla.c" />
@@ -158,6 +160,8 @@
     <ClCompile Include="Stiva.c" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="avl_rezervari.txt" />
+    <Text Include="ex1_ABC.txt" />
     <Text Include="ex2_hashTable.txt" />
     <Text Include="ex2_ListaDubla.txt" />
     <Text Include="ex2_ListaSimpla.txt" />

@@ -208,10 +208,6 @@
 //	calculGrad(radacina);
 //	afisarePreordine(radacina);
 //
-//	//12, Dunarea, Alexandra, 455.5, 6
-//	//5, Rin, Patricia, 555.5, 2
-//	//	12, Caraiman, Ana Maria, 1555.5, 4
-//	//	13, Rin, Amalia, 50.5, 1
-//	//	15, Caraiman, Florentina, 555.5, 2
+//
 //
 //}

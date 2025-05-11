@@ -1,0 +1,9 @@
+8,Magazin1,150.5
+5,Magazin2,150.5
+2,Magazin3,150.5
+10,Magazin4,150.5
+20,Magazin5,150.5
+1,Magazin6,150.5
+7,Magazin7,150.5
+6,Magazin8,150.5
+9,Magazin9,150.5
