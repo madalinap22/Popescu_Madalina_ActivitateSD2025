@@ -16,6 +16,7 @@ typedef struct Dispozitiv {
 typedef struct Heap {
 	int dim;
 	Dispozitiv* vector;
+	int nrDispozitive; //optional
 }Heap;
 
 Dispozitiv initializareDispozitiv(unsigned int id, char* sistemOperare, float pret, char* defecte, unsigned int zile) {
@@ -136,7 +137,21 @@ int nrDispozitive(Heap h, const char* denCautata) {
 	}
 	return contor;
 }
-//stergere
+
+//de modificat
+Dispozitiv extrageDispozitiv(Heap* h) {
+	if (h->vector) {
+		Dispozitiv aux = h->vector[0];
+		h->vector[0] = h->vector[h->dim - 1]; //h.dim - 1 =>ultimul element din vector
+		h->vector[h->dim - 1] = aux;
+		h->dim--;
+	
+		for (int i = (h->dim / 2) - 1; i >= 0; i--) { //atentie la  >= !!!!!!!!!!!!!!!!!!!!!
+			filtrare(*h, i);
+		}
+		return aux; //shallow copy
+	}
+}
 
 
 
@@ -192,6 +207,8 @@ void main() {
 
 	printf("\nAfisare element extras-----------------");
 	afisareDispozitiv(dispExtras);
+
+
 
 
 	dezalocare(h);
