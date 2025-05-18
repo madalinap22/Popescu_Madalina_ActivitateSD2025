@@ -151,6 +151,8 @@
     <ClCompile Include="extra1_ListaSimpla.c" />
     <ClCompile Include="Ex_hashtable.c" />
     <ClCompile Include="HashTableChaining.c" />
+    <ClCompile Include="heap.c" />
+    <ClCompile Include="heap2.c" />
     <ClCompile Include="ListaCirculara.c" />
     <ClCompile Include="ListaDeListe.c" />
     <ClCompile Include="ListaDubla.c" />
@@ -179,6 +181,7 @@
     <Text Include="fisierCoada.txt" />
     <Text Include="fisierEx_hashtable.txt" />
     <Text Include="fisierHash.txt" />
+    <Text Include="fisierHeap.txt" />
     <Text Include="fisierListaCirculara.txt" />
     <Text Include="fisierListaDeListe.txt" />
     <Text Include="fisierListaDubla.txt" />
