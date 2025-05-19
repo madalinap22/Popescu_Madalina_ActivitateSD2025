@@ -1,5 +1,5 @@
-1,Android,23.33,folie,1
+1,Android,23.33,folie,4
 2,IOS,723.33,display,2
 3,Android,100.99,incarcator,7
 4,IOS,489.33,display,3
-5,IOS,599.33,camera,4
+5,IOS,599.33,camera,1

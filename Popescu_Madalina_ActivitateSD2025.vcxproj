@@ -133,6 +133,7 @@
     <ClCompile Include="AVL2.c" />
     <ClCompile Include="Coada.c" />
     <ClCompile Include="ex1_ABC.c" />
+    <ClCompile Include="ex1_Heap.c" />
     <ClCompile Include="ex2_hashTable.c" />
     <ClCompile Include="ex2_ListaDubla.c" />
     <ClCompile Include="ex2_ListaSimpla.c" />
@@ -153,6 +154,7 @@
     <ClCompile Include="HashTableChaining.c" />
     <ClCompile Include="heap.c" />
     <ClCompile Include="heap2.c" />
+    <ClCompile Include="Laborator_Heap.c" />
     <ClCompile Include="ListaCirculara.c" />
     <ClCompile Include="ListaDeListe.c" />
     <ClCompile Include="ListaDubla.c" />
@@ -164,6 +166,7 @@
   <ItemGroup>
     <Text Include="avl_rezervari.txt" />
     <Text Include="ex1_ABC.txt" />
+    <Text Include="ex1_heap.txt" />
     <Text Include="ex2_hashTable.txt" />
     <Text Include="ex2_ListaDubla.txt" />
     <Text Include="ex2_ListaSimpla.txt" />
@@ -188,6 +191,7 @@
     <Text Include="fisierListaDublaCirculara.txt" />
     <Text Include="fisierStiva.txt" />
     <Text Include="ListaSimplaStudenti.txt" />
+    <Text Include="masini.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -114,6 +114,12 @@
     <ClCompile Include="heap2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Laborator_Heap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ex1_Heap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="fisierListaDeListe.txt">
@@ -192,6 +198,12 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="fisierHeap.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="masini.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="ex1_heap.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
