@@ -1,0 +1,5 @@
+1,Proiect1,670.5,6,A
+2,Proiect2,1670.5,8,B
+3,Proiect3,2670.5,10,A
+4,Proiect4,3670.5,3,C
+5,Proiect5,4670.5,13,B

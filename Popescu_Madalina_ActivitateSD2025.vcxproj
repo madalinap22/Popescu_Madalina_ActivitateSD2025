@@ -139,6 +139,7 @@
     <ClCompile Include="ex2_Heap.c" />
     <ClCompile Include="ex2_ListaDubla.c" />
     <ClCompile Include="ex2_ListaSimpla.c" />
+    <ClCompile Include="ex3_ABC.c" />
     <ClCompile Include="ex3_hashTable.c" />
     <ClCompile Include="ex3_ListaDubla.c" />
     <ClCompile Include="ex3_ListaSimpla.c" />
@@ -173,6 +174,7 @@
     <Text Include="ex2_hashTable.txt" />
     <Text Include="ex2_ListaDubla.txt" />
     <Text Include="ex2_ListaSimpla.txt" />
+    <Text Include="ex3_ABC.txt" />
     <Text Include="ex3_hashTable.txt" />
     <Text Include="ex3_ListaDubla.txt" />
     <Text Include="ex3_ListaSimpla.txt" />
