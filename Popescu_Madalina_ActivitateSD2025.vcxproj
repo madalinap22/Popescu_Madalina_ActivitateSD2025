@@ -143,6 +143,9 @@
     <ClCompile Include="ex3_hashTable.c" />
     <ClCompile Include="ex3_ListaDubla.c" />
     <ClCompile Include="ex3_ListaSimpla.c" />
+    <ClCompile Include="ex4_ABC.c" />
+    <ClCompile Include="ex4_Heap.c" />
+    <ClCompile Include="ex4_HeapNew.c" />
     <ClCompile Include="ex4_ListaSimpla.c" />
     <ClCompile Include="ex5_hashTable.c" />
     <ClCompile Include="ex5_ListaDubla.c" />
@@ -197,6 +200,7 @@
     <Text Include="fisierStiva.txt" />
     <Text Include="ListaSimplaStudenti.txt" />
     <Text Include="masini.txt" />
+    <Text Include="Proiecte.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
